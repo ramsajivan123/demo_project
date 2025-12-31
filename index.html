@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: Verdana;
+        }
+        .base{
+            background-image:url('https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding:80px 50px 30px;
+            color: white;
+            margin: 0;
+            display: flex;
+        }
+        .content{
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 60px 30px;
+            font-size: 50px;
+            height:367px;
+            text-align: center;
+            background-color: rgb(25, 24, 24);
+            box-shadow: 0px 0px 5px 8px white;
+        }
+        .image{
+            height: 480px;
+            border: 2px solid white;
+            width: 63%;
+            position: relative;
+            left: 70px;
+            box-shadow: 0 0 5px 8px white;
+            animation-name: ani;
+            animation-duration: 8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes ani{
+            0%{
+                background-image:url('https://thumbs.dreamstime.com/b/laptop-notebook-pen-pencils-wooden-table-various-office-supplies-background-143211860.jpg');
+                background-size: 100% 100%;
+            }   
+            33%{
+                background-image:url('https://plus.unsplash.com/premium_photo-1683124226167-6d79bd64d725?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3R1ZGVudCUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D');
+                background-size: 100% 100%;
+            }
+            66%{
+                background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20221028/pngtree-mature-student-in-the-library-student-intellectual-book-photo-image_20332032.jpg');
+                background-size: 100% 100%;
+            }
+            100%{
+                background-image:url('https://www.transparentpng.com/thumb/student/ECcMj8-student-png.png');
+                background-size: 100% 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <div class="base">
+        <div class="content">
+            Welcome<br>To<br>Student<br>Management<br>System
+        </div>
+
+        <div class="image">
+
+        </div>
+
+    </div>
+    {% include 'footer.html' %}
+    </body>
+</html>
